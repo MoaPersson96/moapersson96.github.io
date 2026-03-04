@@ -46,14 +46,19 @@ export function ImagePuff({ label, title, image, href }: ImagePuffProps) {
           />
 
         {/* Text */}
-        <div className="absolute bottom-24 left-1/2 -translate-x-1/2 text-center px-4">
-          <p className="text-small font-semibold tracking-wider text-white mb-2">
+        <div className="absolute bottom-24 left-1/2 -translate-x-1/2 text-center px-4 max-w-[260px]">
+          <p className="text-small font-medium text-white mb-1">
             {label}
           </p>
 
           <h2 
             id={titleId}
-            className="text-xl font-bold text-white leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+            className="
+              text-xl
+              font-bold
+             text-white
+              leading-snug
+              drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
             {title}
           </h2>
         </div>

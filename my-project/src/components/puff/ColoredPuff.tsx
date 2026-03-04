@@ -33,8 +33,8 @@ export function ColoredPuff({ label, title, href, color, arrowBackgroundColor = 
             <h2 
                 id={titleId}
                 className="
-                text-4xl
-                font-semibold
+                text-2xl
+                font-bold
                 leading-tight
                 mb-8
                 max-w-[250px]

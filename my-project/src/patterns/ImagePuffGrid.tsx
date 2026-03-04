@@ -14,7 +14,7 @@ type Props = {
 
 export function ImagePuffGrid({ items }: Props) {
     return (
-      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         {items.map((item, i) => (
           <ImagePuff key={i} {...item} />
         ))}

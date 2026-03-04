@@ -1,7 +1,7 @@
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Hero1 from "./components/Hero1";
+// import Hero1 from "./components/Hero1";
 import Hero2 from "./components/Hero2";
 import { ColoredPuffGrid } from "./patterns/ColoredPuffGrid";
 import { ImagePuffGrid } from "./patterns/ImagePuffGrid";

@@ -28,8 +28,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             focus:outline-none focus:ring-2 focus:ring-black/60\r
             rounded-md\r
             `,style:{borderColor:r},children:[(0,j.jsx)(`p`,{className:`text-small font-semibold uppercase tracking-wider text-black mb-2`,children:e}),(0,j.jsx)(`h2`,{id:a,className:`\r
-                text-4xl\r
-                font-semibold\r
+                text-2xl\r
+                font-bold\r
                 leading-tight\r
                 mb-8\r
                 max-w-[250px]\r
@@ -45,7 +45,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               flex items-center justify-center\r
               transition-transform\r
               group-hover:scale-110\r
-              `,style:{backgroundColor:i},"aria-hidden":`true`,children:(0,j.jsx)(qn,{className:`w-5 h-5 text-white`})})]})}function Yn({items:e}){return(0,j.jsx)(`div`,{className:`grid grid-cols-1 md:grid-cols-3 gap-6`,children:e.map((e,t)=>(0,j.jsx)(Jn,{...e},t))})}function Xn({label:e,title:t,image:n,href:r}){let i=`${t.replace(/\s+/g,``)}-title`;return(0,j.jsxs)(`a`,{href:r,"aria-labelledby":i,className:`\r
+              `,style:{backgroundColor:i},"aria-hidden":`true`,children:(0,j.jsx)(qn,{className:`w-5 h-5 text-white`})})]})}function Yn({items:e}){return(0,j.jsx)(`div`,{className:`grid grid-cols-1 md:grid-cols-3 gap-3`,children:e.map((e,t)=>(0,j.jsx)(Jn,{...e},t))})}function Xn({label:e,title:t,image:n,href:r}){let i=`${t.replace(/\s+/g,``)}-title`;return(0,j.jsxs)(`a`,{href:r,"aria-labelledby":i,className:`\r
          group relative block\r
          w-full h-[420px]\r
          rounded-lg\r
@@ -61,7 +61,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           `,style:{backgroundImage:`url(${n})`},"aria-hidden":`true`}),(0,j.jsx)(`div`,{className:`\r
            absolute inset-0\r
            bg-linear-to-t from-black/70 via-black/25 to-transparent\r
-           `,"aria-hidden":`true`}),(0,j.jsxs)(`div`,{className:`absolute bottom-24 left-1/2 -translate-x-1/2 text-center px-4`,children:[(0,j.jsx)(`p`,{className:`text-small font-semibold tracking-wider text-white mb-2`,children:e}),(0,j.jsx)(`h2`,{id:i,className:`text-xl font-bold text-white leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]`,children:t})]}),(0,j.jsx)(`div`,{className:`\r
+           `,"aria-hidden":`true`}),(0,j.jsxs)(`div`,{className:`absolute bottom-24 left-1/2 -translate-x-1/2 text-center px-4 max-w-[260px]`,children:[(0,j.jsx)(`p`,{className:`text-small font-medium text-white mb-1`,children:e}),(0,j.jsx)(`h2`,{id:i,className:`\r
+              text-xl\r
+              font-bold\r
+             text-white\r
+              leading-snug\r
+              drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]`,children:t})]}),(0,j.jsx)(`div`,{className:`\r
            absolute bottom-6\r
            left-1/2\r
            -translate-x-1/2\r
@@ -73,7 +78,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
            transition-transfrom\r
            duration-300\r
            group-hover:scale-110\r
-          `,"aria-hidden":`true`,children:(0,j.jsx)(qn,{className:`w-6 h-6 text-black`,stroke:`black`})})]})}function Zn({items:e}){return(0,j.jsx)(`div`,{className:`w-full grid grid-cols-1 md:grid-cols-3 gap-6`,children:e.map((e,t)=>(0,j.jsx)(Xn,{...e},t))})}function Qn({title:e,href:t,inverted:n=!1}){let r=`${e.replace(/\s+/g,``)}-title`;return(0,j.jsxs)(`a`,{href:t,"aria-labelledby":r,className:`
+          `,"aria-hidden":`true`,children:(0,j.jsx)(qn,{className:`w-6 h-6 text-black`,stroke:`black`})})]})}function Zn({items:e}){return(0,j.jsx)(`div`,{className:`grid grid-cols-1 md:grid-cols-3 gap-3`,children:e.map((e,t)=>(0,j.jsx)(Xn,{...e},t))})}function Qn({title:e,href:t,inverted:n=!1,position:r}){let i=`${e.replace(/\s+/g,``)}-title`,a={left:``,middle:``,right:``};return(0,j.jsxs)(`a`,{href:t,"aria-labelledby":i,className:`
           group
           flex items-center justify-between
           w-full
@@ -83,8 +88,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           border border-black
           transition
           focus:outline-none focus:ring-4 focus:ring-black/50
+          ${a[r]}
+          ${r===`left`?``:`-ml-px`}
           ${n?`bg-white text-black`:`bg-black text-white`}
-          `,children:[(0,j.jsx)(`h2`,{id:r,className:`\r
+          `,children:[(0,j.jsx)(`h2`,{id:i,className:`\r
             text-2xl\r
             font-medium\r
             tracking-wide\r
@@ -98,4 +105,4 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             transition
             group-hover:scale-110
             ${n?`bg-black text-white`:`bg-white text-black`}
-        `,"aria-hidden":`true`,children:(0,j.jsx)(qn,{className:`w-6 h-6`})})]})}function $n({items:e}){return(0,j.jsx)(`div`,{className:`w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6`,children:e.map((e,t)=>(0,j.jsx)(Qn,{...e},t))})}function er(){return(0,j.jsxs)(`body`,{className:`min-h-screen flex flex-col max-w-[1920px] justify-self-center`,children:[(0,j.jsx)(Un,{}),(0,j.jsx)(Kn,{date:`2020-12-22`,smallHeaderText:`Case Stories`,headerText:`Campus Skellefteå säkerställer framtidens kunskapsbehov`,text:`Hella Skellefteå vibrerar. Nya Miljardetableringar med batteritillverkaren Northvolt i spetsen får positiva effekter för näringslivet och det arbetas intensivt för att lösa alltifrån bostadsbehov till rekryteringsfrågor. Mitt i allt detta finns Campus Skellefteå, som får en nyckelroll för att möjliggöra utvecklingen. - Den industri som växer fram här är inte bara ny i Sverige utan hela Europa, vilket självklart påverkar kraven på både forskning och kompetensomvandling, säger Ida Lindh, strategiskt ansvarig på Campus`,navButtonText:`Till Case Stories`,navDestination:`Lorem Ipsum `,imgLink:`https://a.travel-assets.com/findyours-php/viewfinder/images/res70/230000/230134-Skelleftea.jpg`}),(0,j.jsxs)(`main`,{className:`grow flex flex-col items-center justify-center text-center`,role:`main`,children:[(0,j.jsx)(`div`,{className:`w-full max-w-6xl mx-auto px-4 mt-10 mb-10`,children:(0,j.jsx)($n,{items:[{title:`Lorem Ipsum`,href:`#`},{title:`Lorem Ipsum`,href:`#`,inverted:!0},{title:`Lorem Ipsum`,href:`#`}]})}),(0,j.jsx)(`div`,{className:`mt-16 w-full max-w-6xl mx-auto px-4`,children:(0,j.jsx)(Yn,{items:[{title:`Lorem Ipsum`,label:`Lorem`,href:`#`,color:`#D3B73D`,arrowBackgroundColor:`#721904`},{title:`Lorem Ipsum`,label:`Lorem`,href:`#`,color:`#8B341F`,arrowBackgroundColor:`#7B932E`},{title:`Lorem Ipsum`,label:`Lorem`,href:`#`,color:`#9EB45A`,arrowBackgroundColor:`#C1A016`}]})}),(0,j.jsx)(`div`,{className:`w-full max-w-6xl mx-auto px-4 mt-16 mb-16`,children:(0,j.jsx)(Zn,{items:[{label:`Lorem`,title:`Lorem Ipsum`,image:`/images/Bergnasbron.png`,href:`#`},{label:`Lorem`,title:`Lorem Ipsum`,image:`/images/Norrsken.png`,href:`#`},{label:`Lorem`,title:`Lorem Ipsum`,image:`/images/Kyrkbyn.png`,href:`#`}]})}),(0,j.jsx)(Ln,{role:`contentinfo`,"aria-label":`Sidfot`})]})]})}var tr=er;(0,Fn.createRoot)(document.getElementById(`root`)).render((0,j.jsx)(x.StrictMode,{children:(0,j.jsx)(mn,{children:(0,j.jsx)(tr,{})})}));
+        `,"aria-hidden":`true`,children:(0,j.jsx)(qn,{className:`w-6 h-6`})})]})}function $n({items:e}){return(0,j.jsx)(`div`,{className:`w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3`,children:e.map((e,t)=>(0,j.jsx)(Qn,{...e},t))})}function er(){return(0,j.jsxs)(`body`,{className:`min-h-screen flex flex-col max-w-[1920px] justify-self-center`,children:[(0,j.jsx)(Un,{}),(0,j.jsx)(Kn,{date:`2020-12-22`,smallHeaderText:`Case Stories`,headerText:`Campus Skellefteå säkerställer framtidens kunskapsbehov`,text:`Hella Skellefteå vibrerar. Nya Miljardetableringar med batteritillverkaren Northvolt i spetsen får positiva effekter för näringslivet och det arbetas intensivt för att lösa alltifrån bostadsbehov till rekryteringsfrågor. Mitt i allt detta finns Campus Skellefteå, som får en nyckelroll för att möjliggöra utvecklingen. - Den industri som växer fram här är inte bara ny i Sverige utan hela Europa, vilket självklart påverkar kraven på både forskning och kompetensomvandling, säger Ida Lindh, strategiskt ansvarig på Campus`,navButtonText:`Till Case Stories`,navDestination:`Lorem Ipsum `,imgLink:`https://a.travel-assets.com/findyours-php/viewfinder/images/res70/230000/230134-Skelleftea.jpg`}),(0,j.jsxs)(`main`,{className:`grow flex flex-col items-center justify-center text-center`,role:`main`,children:[(0,j.jsx)(`div`,{className:`w-full max-w-6xl mx-auto px-4 mt-10 mb-10`,children:(0,j.jsx)($n,{items:[{title:`Lorem Ipsum`,href:`#`,position:`left`},{title:`Lorem Ipsum`,href:`#`,inverted:!0,position:`middle`},{title:`Lorem Ipsum`,href:`#`,position:`right`}]})}),(0,j.jsx)(`div`,{className:`mt-16 w-full max-w-6xl mx-auto px-4`,children:(0,j.jsx)(Yn,{items:[{title:`Lorem ipsum dolor sit amet, consectetuer adipiscing elit.`,label:`Lorem`,href:`#`,color:`#D3B73D`,arrowBackgroundColor:`#721904`},{title:`Lorem ipsum dolor sit amet, consectetuer adipiscing elit.`,label:`Lorem`,href:`#`,color:`#8B341F`,arrowBackgroundColor:`#7B932E`},{title:`Lorem ipsum dolor sit amet, consectetuer adipiscing elit.`,label:`Lorem`,href:`#`,color:`#9EB45A`,arrowBackgroundColor:`#C1A016`}]})}),(0,j.jsx)(`div`,{className:`w-full max-w-6xl mx-auto px-4 mt-16 mb-16`,children:(0,j.jsx)(Zn,{items:[{label:`Lorem`,title:`Lorem ipsum dolor sit amet`,image:`/images/Bergnasbron.png`,href:`#`},{label:`Lorem`,title:`Lorem ipsum dolor sit amet`,image:`/images/Norrsken.png`,href:`#`},{label:`Lorem`,title:`Lorem ipsum dolor sit amet`,image:`/images/Kyrkbyn.png`,href:`#`}]})}),(0,j.jsx)(Ln,{role:`contentinfo`,"aria-label":`Sidfot`})]})]})}var tr=er;(0,Fn.createRoot)(document.getElementById(`root`)).render((0,j.jsx)(x.StrictMode,{children:(0,j.jsx)(mn,{children:(0,j.jsx)(tr,{})})}));

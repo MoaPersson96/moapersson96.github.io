@@ -84,7 +84,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           w-full
           px-10 py-6
           h-40
-          rounded-md
           border border-black
           transition
           focus:outline-none focus:ring-4 focus:ring-black/50

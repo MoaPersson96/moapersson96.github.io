@@ -27,7 +27,6 @@ export function WidePuff({ title, href, inverted = false, position }: WidePuffPr
           w-full
           px-10 py-6
           h-40
-          rounded-md
           border border-black
           transition
           focus:outline-none focus:ring-4 focus:ring-black/50

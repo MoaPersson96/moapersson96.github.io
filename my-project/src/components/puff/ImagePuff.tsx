@@ -16,8 +16,7 @@ export function ImagePuff({ label, title, image, href }: ImagePuffProps) {
         aria-labelledby={titleId}
         className="
          group relative block
-         w-full h-[420px]
-         rounded-lg
+         w-full aspect-4/5
          overflow-hidden
          focus:outline-none focus:ring-2 focus:ring-white/60
         "
@@ -40,13 +39,13 @@ export function ImagePuff({ label, title, image, href }: ImagePuffProps) {
         <div
           className="
            absolute inset-0
-           bg-linear-to-t from-black/70 via-black/25 to-transparent
+           bg-linear-to-t from-black/80 via-black/40 to-transparent
            " 
            aria-hidden="true"
           />
 
         {/* Text */}
-        <div className="absolute bottom-24 left-1/2 -translate-x-1/2 text-center px-4 max-w-[260px]">
+        <div className="absolute bottom-28 left-1/2 -translate-x-1/2 text-center px-4 max-w-60">
           <p className="text-small font-medium text-white mb-1">
             {label}
           </p>
@@ -66,21 +65,22 @@ export function ImagePuff({ label, title, image, href }: ImagePuffProps) {
         {/* Arrow Button */}
         <div
           className="
-           absolute bottom-6
+           absolute
+           bottom-8
            left-1/2
            -translate-x-1/2
-           w-12 h-12
+           w-16 h-16
            rounded-full
            bg-white
            flex items-center justify-center
            shadow-lg
-           transition-transfrom
-           duration-300
+           transition-transform
+           duration-700
            group-hover:scale-110
           "
           aria-hidden="true"
         >
-          <ArrowRight className="w-6 h-6 text-black" stroke="black" />
+          <ArrowRight className="w-7 h-7 text-black" stroke="black" />
         </div>
       </a>
     );

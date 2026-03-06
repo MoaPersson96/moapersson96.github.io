@@ -56,37 +56,40 @@ function App() {
         </div>
 
         {/* Colored puffs */}
-        <div className="mt-16 w-full max-w-6xl mx-auto px-4">
+        <div className="mt-16 w-full max-w-[1920px] mx-auto px-4">
           <ColoredPuffGrid
             items={[
               {
-                title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                title: "Lorem ipsum dolor sit amet.",
                 label: "Lorem",
                 href: "#",
-                color: "#D3B73D",
                 arrowBackgroundColor: "#721904",
               },
               {
-                title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                title: "Lorem ipsum dolor sit amet.",
                 label: "Lorem",
                 href: "#",
-                color: "#8B341F",
                 arrowBackgroundColor: "#7B932E",
               },
               {
-                title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                title: "Lorem ipsum dolor sit amet.",
                 label: "Lorem",
                 href: "#",
-                color: "#9EB45A",
                 arrowBackgroundColor: "#C1A016",
               },
+              {
+                title: "Lorem ipsum dolor sit amet.",
+                label: "Lorem",
+                href: "#",
+                arrowBackgroundColor: "#455B81",
+              }
             ]}
           />
         </div>
 
         {/* Image Puff */}
 
-        <div className="w-full max-w-6xl mx-auto px-4 mt-16 mb-16">
+        <div className="w-full max-w-[1920px] mx-auto px-4 mt-16 mb-16">
           <ImagePuffGrid
             items={[
               {

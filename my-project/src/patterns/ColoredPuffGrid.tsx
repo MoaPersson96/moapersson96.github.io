@@ -5,7 +5,6 @@ type PuffItem = {
     label: string;
     title: string;
     href: string;
-    color: string;
     arrowBackgroundColor?: string;
 };
 
@@ -13,7 +12,14 @@ type Props = { items: PuffItem[] };
 
 export function ColoredPuffGrid({ items }: Props) {
     return (
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+      <div className="
+        grid
+        grid-cols-1
+        sm:grid-cols-2
+        lg:grid-cols-4
+        gap-6
+        "
+      >
         {items.map((item, i) => (
             <ColoredPuff key={i} {...item} />
         ))}

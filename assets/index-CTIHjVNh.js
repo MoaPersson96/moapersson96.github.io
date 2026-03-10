@@ -24,10 +24,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             group relative\r
             flex flex-col items-center justify-center\r
             text-center\r
-            bg-neutral-100 text-black\r
+            bg-[#f8f8f8] text-black\r
             p-10\r
-            min-h-[260px]\r
-            border border-neutral-200\r
+            min-h-60\r
+            md:min-h-90\r
             hover:shadow-lg\r
             transition-all\r
             focus:outline-none focus:ring-2 focus:ring-black/60\r
@@ -51,7 +51,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         grid-cols-1\r
         sm:grid-cols-2\r
         lg:grid-cols-4\r
-        gap-6\r
+        gap-5\r
         `,children:e.map((e,t)=>(0,j.jsx)(Jn,{...e},t))})}function Xn({label:e,title:t,image:n,href:r}){let i=`${t.replace(/\s+/g,``)}-title`;return(0,j.jsxs)(`a`,{href:r,"aria-labelledby":i,className:`\r
          group relative block\r
          w-full aspect-4/5\r
@@ -90,13 +90,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         grid-cols-1\r
         sm:grid-cols-2\r
         lg:grid-cols-3\r
-        gap-6\r
+        gap-5\r
         `,children:e.map((e,t)=>(0,j.jsx)(Xn,{...e},t))})}function Qn({title:e,href:t,inverted:n=!1,position:r}){let i=`${e.replace(/\s+/g,``)}-title`,a={left:``,middle:``,right:``};return(0,j.jsxs)(`a`,{href:t,"aria-labelledby":i,className:`
           group
           flex items-center justify-between
           w-full
           px-10 py-6
-          h-40
+          h-56
           border border-black
           transition
           focus:outline-none focus:ring-4 focus:ring-black/50
@@ -119,9 +119,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             ${n?`bg-black text-white`:`bg-white text-black`}
         `,"aria-hidden":`true`,children:(0,j.jsx)(qn,{className:`w-6 h-6`})})]})}function $n({items:e}){return(0,j.jsx)(`div`,{className:`\r
         w-full\r
-        max-w-5xl\r
-        mx-auto\r
         grid\r
         grid-cols-1\r
         md:grid-cols-3\r
-        `,children:e.map((e,t)=>(0,j.jsx)(Qn,{...e},t))})}function er({title:e,buttonText:t,buttonAction:n}){return(0,j.jsx)(`section`,{className:`bg-black py-16 mb-10 w-full`,children:(0,j.jsxs)(`div`,{className:`max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-6 md:px-0`,children:[(0,j.jsx)(`p`,{className:`text-gray-200 text-lg md:text-xl max-w-3xl leading-relaxed`,children:e}),(0,j.jsx)(`button`,{onClick:n,className:`bg-[#8B341F] hover:bg-[#721904] transition px-8 py-4 rounded-lg font-semibold text-white whitespace-nowrap`,children:t})]})})}function tr(){return(0,j.jsx)(`body`,{className:`min-h-screen flex flex-col`,children:(0,j.jsxs)(`div`,{className:`max-w-[1920px] max-auto w-full`,children:[(0,j.jsx)(Un,{}),(0,j.jsx)(Kn,{date:`2020-12-22`,smallHeaderText:`Case Stories`,headerText:`Campus Skellefteå säkerställer framtidens kunskapsbehov`,text:`Hella Skellefteå vibrerar. Nya Miljardetableringar med batteritillverkaren Northvolt i spetsen får positiva effekter för näringslivet och det arbetas intensivt för att lösa alltifrån bostadsbehov till rekryteringsfrågor. Mitt i allt detta finns Campus Skellefteå, som får en nyckelroll för att möjliggöra utvecklingen. - Den industri som växer fram här är inte bara ny i Sverige utan hela Europa, vilket självklart påverkar kraven på både forskning och kompetensomvandling, säger Ida Lindh, strategiskt ansvarig på Campus`,navButtonText:`Till Case Stories`,navDestination:`Lorem Ipsum `,imgLink:`https://a.travel-assets.com/findyours-php/viewfinder/images/res70/230000/230134-Skelleftea.jpg`}),(0,j.jsxs)(`main`,{className:`grow flex flex-col items-center justify-center text-center`,role:`main`,children:[(0,j.jsx)(`div`,{className:`w-full max-w-6xl mx-auto px-4 mt-10 mb-10`,children:(0,j.jsx)($n,{items:[{title:`Lorem Ipsum`,href:`#`,position:`left`},{title:`Lorem Ipsum`,href:`#`,inverted:!0,position:`middle`},{title:`Lorem Ipsum`,href:`#`,position:`right`}]})}),(0,j.jsx)(`div`,{className:`mt-16 w-full max-w-[1920px] mx-auto px-4`,children:(0,j.jsx)(Yn,{items:[{title:`Lorem ipsum dolor sit amet.`,label:`Lorem`,href:`#`,arrowBackgroundColor:`#721904`},{title:`Lorem ipsum dolor sit amet.`,label:`Lorem`,href:`#`,arrowBackgroundColor:`#7B932E`},{title:`Lorem ipsum dolor sit amet.`,label:`Lorem`,href:`#`,arrowBackgroundColor:`#C1A016`},{title:`Lorem ipsum dolor sit amet.`,label:`Lorem`,href:`#`,arrowBackgroundColor:`#455B81`}]})}),(0,j.jsx)(`div`,{className:`w-full max-w-[1920px] mx-auto px-4 mt-16 mb-16`,children:(0,j.jsx)(Zn,{items:[{label:`Lorem`,title:`Lorem ipsum dolor sit amet`,image:`/images/Bergnasbron.png`,href:`#`},{label:`Lorem`,title:`Lorem ipsum dolor sit amet`,image:`/images/Norrsken.png`,href:`#`},{label:`Lorem`,title:`Lorem ipsum dolor sit amet`,image:`/images/Kyrkbyn.png`,href:`#`}]})}),(0,j.jsx)(er,{title:`Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus.`,buttonText:`Läs mer`,buttonAction:()=>{alert(`CTA button clicked!`)}}),(0,j.jsx)(Ln,{role:`contentinfo`,"aria-label":`Sidfot`})]})]})})}var nr=tr;(0,Fn.createRoot)(document.getElementById(`root`)).render((0,j.jsx)(x.StrictMode,{children:(0,j.jsx)(mn,{children:(0,j.jsx)(nr,{})})}));
+        gap-0\r
+        `,children:e.map((e,t)=>(0,j.jsx)(Qn,{...e},t))})}function er({title:e,buttonText:t,buttonAction:n}){return(0,j.jsx)(`section`,{className:`bg-black py-16 mb-10 w-full`,children:(0,j.jsxs)(`div`,{className:`max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-6 md:px-0`,children:[(0,j.jsx)(`p`,{className:`text-gray-200 text-lg md:text-xl max-w-3xl leading-relaxed`,children:e}),(0,j.jsx)(`button`,{onClick:n,className:`bg-[#8B341F] hover:bg-[#721904] transition px-8 py-4 rounded-lg font-semibold text-white whitespace-nowrap`,children:t})]})})}function tr(){return(0,j.jsx)(`body`,{className:`min-h-screen flex flex-col`,children:(0,j.jsxs)(`div`,{className:`max-w-[1920px] max-auto w-full`,children:[(0,j.jsx)(Un,{}),(0,j.jsx)(Kn,{date:`2020-12-22`,smallHeaderText:`Case Stories`,headerText:`Campus Skellefteå säkerställer framtidens kunskapsbehov`,text:`Hella Skellefteå vibrerar. Nya Miljardetableringar med batteritillverkaren Northvolt i spetsen får positiva effekter för näringslivet och det arbetas intensivt för att lösa alltifrån bostadsbehov till rekryteringsfrågor. Mitt i allt detta finns Campus Skellefteå, som får en nyckelroll för att möjliggöra utvecklingen. - Den industri som växer fram här är inte bara ny i Sverige utan hela Europa, vilket självklart påverkar kraven på både forskning och kompetensomvandling, säger Ida Lindh, strategiskt ansvarig på Campus`,navButtonText:`Till Case Stories`,navDestination:`Lorem Ipsum `,imgLink:`https://a.travel-assets.com/findyours-php/viewfinder/images/res70/230000/230134-Skelleftea.jpg`}),(0,j.jsxs)(`main`,{className:`grow flex flex-col items-center justify-center text-center`,role:`main`,children:[(0,j.jsx)(`div`,{className:`w-full mt-10 mb-10 px-4`,children:(0,j.jsx)($n,{items:[{title:`Lorem Ipsum`,href:`#`,position:`left`},{title:`Lorem Ipsum`,href:`#`,inverted:!0,position:`middle`},{title:`Lorem Ipsum`,href:`#`,position:`right`}]})}),(0,j.jsx)(`div`,{className:`mt-8 w-full max-w-[1920px] mx-auto px-4`,children:(0,j.jsx)(Yn,{items:[{title:`Lorem ipsum dolor sit amet.`,label:`Lorem`,href:`#`,arrowBackgroundColor:`#721904`},{title:`Lorem ipsum dolor sit amet.`,label:`Lorem`,href:`#`,arrowBackgroundColor:`#7B932E`},{title:`Lorem ipsum dolor sit amet.`,label:`Lorem`,href:`#`,arrowBackgroundColor:`#C1A016`},{title:`Lorem ipsum dolor sit amet.`,label:`Lorem`,href:`#`,arrowBackgroundColor:`#455B81`}]})}),(0,j.jsx)(`div`,{className:`w-full max-w-[1920px] mx-auto px-4 mt-16 mb-16`,children:(0,j.jsx)(Zn,{items:[{label:`Lorem`,title:`Lorem ipsum dolor sit amet`,image:`/images/Bergnasbron.png`,href:`#`},{label:`Lorem`,title:`Lorem ipsum dolor sit amet`,image:`/images/Norrsken.png`,href:`#`},{label:`Lorem`,title:`Lorem ipsum dolor sit amet`,image:`/images/Kyrkbyn.png`,href:`#`}]})}),(0,j.jsx)(er,{title:`Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus.`,buttonText:`Läs mer`,buttonAction:()=>{alert(`CTA button clicked!`)}}),(0,j.jsx)(Ln,{role:`contentinfo`,"aria-label":`Sidfot`})]})]})})}var nr=tr;(0,Fn.createRoot)(document.getElementById(`root`)).render((0,j.jsx)(x.StrictMode,{children:(0,j.jsx)(mn,{children:(0,j.jsx)(nr,{})})}));

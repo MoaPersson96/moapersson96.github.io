@@ -6,8 +6,13 @@ import Hero2 from "./components/Hero2";
 import { ColoredPuffGrid } from "./patterns/ColoredPuffGrid";
 import { ImagePuffGrid } from "./patterns/ImagePuffGrid";
 import { WidePuffGrid } from "./patterns/WidePuffGrid";
+import { CallToAction1 } from "./components/CallToAction1";
 
 function App() {
+  const handleCTAButtonClick = () => {
+    alert("CTA button clicked!");
+  };
+
   return (
     <body className="min-h-screen flex flex-col">
       <div className="max-w-[1920px] max-auto w-full">
@@ -114,6 +119,13 @@ function App() {
               ]}
             />
           </div>
+
+          <CallToAction1
+            title="Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus."
+            buttonText="Läs mer"
+            buttonAction={handleCTAButtonClick}
+          />
+
           <Footer role="contentinfo" aria-label="Sidfot" />
         </main>
       </div>

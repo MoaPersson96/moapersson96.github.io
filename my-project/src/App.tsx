@@ -38,7 +38,7 @@ function App() {
         <main className="grow flex flex-col items-center justify-center text-center" role="main">
 
           {/* Black and white puff */}
-          <div className="w-full max-w-6xl mx-auto px-4 mt-10 mb-10">
+          <div className="w-full mt-10 mb-10 px-4">
             <WidePuffGrid
               items={[
                 {
@@ -62,7 +62,7 @@ function App() {
           </div>
 
           {/* Colored puffs */}
-          <div className="mt-16 w-full max-w-[1920px] mx-auto px-4">
+          <div className="mt-8 w-full max-w-[1920px] mx-auto px-4">
             <ColoredPuffGrid
               items={[
                 {

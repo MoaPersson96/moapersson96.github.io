@@ -19,7 +19,7 @@ export function ImagePuffGrid({ items }: Props) {
         grid-cols-1
         sm:grid-cols-2
         lg:grid-cols-3
-        gap-6
+        gap-5
         "
       >
         {items.map((item, i) => (

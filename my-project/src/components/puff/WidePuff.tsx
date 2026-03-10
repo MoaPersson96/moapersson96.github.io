@@ -26,7 +26,7 @@ export function WidePuff({ title, href, inverted = false, position }: WidePuffPr
           flex items-center justify-between
           w-full
           px-10 py-6
-          h-40
+          h-56
           border border-black
           transition
           focus:outline-none focus:ring-4 focus:ring-black/50

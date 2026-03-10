@@ -14,11 +14,10 @@ export function WidePuffGrid({ items }: Props) {
     return (
       <div className="
         w-full
-        max-w-5xl
-        mx-auto
         grid
         grid-cols-1
         md:grid-cols-3
+        gap-0
         "
         >
         {items.map((item, i) => (

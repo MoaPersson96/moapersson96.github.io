@@ -19,10 +19,10 @@ export function ColoredPuff({ label, title, href, arrowBackgroundColor = "#F3F4F
             group relative
             flex flex-col items-center justify-center
             text-center
-            bg-neutral-100 text-black
+            bg-[#f8f8f8] text-black
             p-10
-            min-h-[260px]
-            border border-neutral-200
+            min-h-60
+            md:min-h-90
             hover:shadow-lg
             transition-all
             focus:outline-none focus:ring-2 focus:ring-black/60

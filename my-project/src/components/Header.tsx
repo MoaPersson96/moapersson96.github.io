@@ -8,18 +8,17 @@ function Header() {
 
   return (
     <>
-      <header className="sticky top-0 bg-white text-white w-max min-w-full max-w-7xl mx-auto z-50">
-        <div className="flex" >
-          <a className="text-2xl font-bold text-center h-full v-full min-v-full flex items-center justify-center px-6">
-            <img src="https://skelleftea.se/images/18.57e3b0a17a75fbf0652ca88/1630320903542/skell-eftea.png" alt="Skelefteå logga" className="w-auto"/>
+      <header className="sticky top-0 bg-white text-white w-full mx-auto z-50 h-30">
+        <div className="flex items-center justify-between h-full">
+          <a className="flex items-center px-3">
+            <img src="https://skelleftea.se/images/18.57e3b0a17a75fbf0652ca88/1630320903542/skell-eftea.png" alt="Skelefteå logga" className="h-16 w-auto"/>
           </a>
-
-          <div className="justify-center flex-grow hidden md:flex">
-            <NavButton buttonText="Hem" href="/" />
-            <NavButton buttonText="Nyheter" href="/Bj-rnmamman-LIA/Nyheter" />
+          <div className="flex-1 justify-center hidden md:flex">
+            <NavButton buttonText="Widgets" href="widgets" />
+            <NavButton buttonText="Feed" href="feed" />
           </div>
 
-          <div className=" bg-[#985A1C] hover:bg-[#B87F45] m-3 space-y-2 rounded p-4 shadow md:hidden " onClick={() => setMenuOpen(!menuOpen)}>
+          <div className="ml-auto bg-[#985A1C] hover:bg-[#B87F45] m-2 space-y-1 rounded p-2 shadow md:hidden " onClick={() => setMenuOpen(!menuOpen)}>
             <span className="block h-0.5 w-8 bg-gray-100"></span>
             <span className="block h-0.5 w-8 bg-gray-100"></span>
             <span className="block h-0.5 w-8 bg-gray-100"></span>
@@ -28,8 +27,8 @@ function Header() {
 
           {menuOpen && (
             <div className="md:hidden flex flex-col gap-3 bg-black px-6 pb-4 w-full text-center">
-              <NavButton buttonText="Hem" href="/" />
-              <NavButton buttonText="Nyheter" href="/Bj-rnmamman-LIA/Nyheter" />
+              <NavButton buttonText="Widgets" href="widgets" />
+              <NavButton buttonText="Feed" href="feed" />
             </div>
           )}
 

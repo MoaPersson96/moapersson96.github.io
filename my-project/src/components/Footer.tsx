@@ -1,5 +1,6 @@
 import React from "react";
 
+// Moa
 type FooterProps = React.HTMLAttributes<HTMLElement>;
 
 const Footer: React.FC<FooterProps> = (props) => {

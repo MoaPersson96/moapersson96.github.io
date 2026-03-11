@@ -1,5 +1,6 @@
 import React from "react";
 
+// Moa
 export function ArrowRight(props: React.SVGProps<SVGSVGElement>) {
     return (
       <svg

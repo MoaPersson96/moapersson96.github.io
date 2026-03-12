@@ -56,10 +56,10 @@ function Hero2({
               <h3 className="text-black text-md text-center md:text-left md:text-2xl md:m-4 md:mx-8 md:mb-2 font-bold">
                 {smallHeaderText}
               </h3>
-              <h2 className="text-black text-2xl md:text-6xl text-center md:text-left m-4 md:line-clamp-4 mx-8 mt-0 font-bold">
+              <h2 className="text-black text-xl md:text-5xl text-center md:text-left m-4 md:line-clamp-4 mx-8 mt-0 font-bold">
                 {headerText}
               </h2>
-              <p className="text-black md:text-2xl text-center md:text-left m-0 m-4 md:mx-8 ">{text}</p>
+              <p className="text-black md:text-xl text-center md:text-left m-4 md:mx-8 ">{text}</p>
             </div>
           </div>
         </div>

@@ -22,7 +22,7 @@ function Header() {
           {/* Desktop navbar */}
           <div className="hidden md:flex gap-6 ml-auto mr-6">
             <div className="group">
-              <NavButton buttonText="Widgets" href="#" />
+              <NavButton buttonText="Widgets" href="/" />
 
               <div className="hidden group-hover:block">
                 <WidgetsDropdown />
@@ -43,8 +43,8 @@ function Header() {
           {/* Mobile menu */}
           {menuOpen && (
             <div className="md:hidden flex flex-col gap-3 bg-black px-6 pb-4 w-full text-center">
-              <NavButton buttonText="Widgets" href="widgets" />
-              <NavButton buttonText="Feed" href="feed" />
+              <NavButton buttonText="Widgets" href="/" />
+              <NavButton buttonText="Feed" href="/feed" />
             </div>
           )}
 

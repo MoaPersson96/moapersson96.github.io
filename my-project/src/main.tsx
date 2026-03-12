@@ -11,7 +11,7 @@ createRoot(document.getElementById('root')!).render(
     <HashRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/Feed" element={<Feed />} />
+        <Route path="/feed" element={<Feed />} />
       </Routes>
     </HashRouter>
   </StrictMode>

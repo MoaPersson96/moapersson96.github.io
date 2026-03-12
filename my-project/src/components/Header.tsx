@@ -29,7 +29,7 @@ function Header() {
               </div>
             </div>
 
-            <NavButton buttonText="Feed" href="feed" />
+            <NavButton buttonText="Feed" href="/feed" />
           </div>
 
           {/* Hamburger meny */}

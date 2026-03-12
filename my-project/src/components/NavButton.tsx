@@ -1,4 +1,4 @@
-import ButtonBig from "./ButtonBig"
+import { Link } from "react-router-dom";
 
 type NavButtonProps = {
   buttonText: string;
@@ -8,11 +8,12 @@ type NavButtonProps = {
 
 function NavButton( {buttonText, href}: NavButtonProps) {
   return (
-    <>
-    <a href={href}>
-      <ButtonBig buttonText={buttonText}/>
-    </a>
-    </>
+    <Link
+      to={href}
+      className="text-black text-medium text-center px-4 font-semibold transition"
+      >
+        {buttonText}
+      </Link>
   );
 }
 

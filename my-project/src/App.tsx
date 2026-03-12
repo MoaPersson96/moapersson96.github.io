@@ -14,9 +14,9 @@ function App() {
   };
 
   return (
-    <body className="min-h-screen flex flex-col">
-      <div className="max-w-[1920px] max-auto w-full">
-        <Header />
+    <body className="min-h-screen flex flex-col overflow-x-hidden">
+      <Header />
+      <div className="max-w-[1920px] mx-auto w-full">
         {/* <Hero1
         text = "Vi hjälper er att både etablera och utveckla er verksamhet i Skellefteåområdet"
         navButtonText="Läs mer"

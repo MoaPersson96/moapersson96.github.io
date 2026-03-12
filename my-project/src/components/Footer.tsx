@@ -25,7 +25,7 @@ const Footer: React.FC<FooterProps> = (props) => {
             <li>
               <a
                 href="#"
-                className="hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-white rounded-sm"
+                className="focus:outline-none focus:ring-2 focus:ring-white rounded-sm"
               >
                 Integritetspolicy
               </a>
@@ -34,7 +34,7 @@ const Footer: React.FC<FooterProps> = (props) => {
             <li>
               <a
                 href="#"
-                className="hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-white rounded-sm"
+                className="focus:outline-none focus:ring-2 focus:ring-white rounded-sm"
               >
                 Användarvillkor
               </a>
@@ -43,7 +43,7 @@ const Footer: React.FC<FooterProps> = (props) => {
             <li>
               <a
                 href="#"
-                className="hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-white rounded-sm"
+                className="focus:outline-none focus:ring-2 focus:ring-white rounded-sm"
               >
                 Kontakta oss
               </a>
@@ -62,7 +62,7 @@ const Footer: React.FC<FooterProps> = (props) => {
                 aria-label="Besök oss på X (Twitter)"
                 className="
                   p-2 text-white rounded-full 
-                  hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-white
+                  focus:outline-none focus:ring-2 focus:ring-white
                 "
               >
                 <svg
@@ -85,7 +85,7 @@ const Footer: React.FC<FooterProps> = (props) => {
                 aria-label="Besök oss på LinkedIn"
                 className="
                   p-2 text-white rounded-full 
-                  hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-white
+                  focus:outline-none focus:ring-2 focus:ring-white
                 "
               >
                 <svg
@@ -108,7 +108,7 @@ const Footer: React.FC<FooterProps> = (props) => {
                 aria-label="Besök oss på Instagram"
                 className="
                   p-2 text-white rounded-full 
-                  hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-white
+                  focus:outline-none focus:ring-2 focus:ring-white
                 "
               >
                 <svg

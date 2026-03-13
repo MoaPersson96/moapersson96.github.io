@@ -7,7 +7,7 @@ import { ImagePuffGrid } from "../patterns/ImagePuffGrid";
 import { WidePuffGrid } from "../patterns/WidePuffGrid";
 import { CallToAction1 } from "../components/CallToAction1";
 
-function App() {
+function Feed() {
   const handleCTAButtonClick = () => {
     alert("CTA button clicked!");
   };
@@ -125,4 +125,4 @@ function App() {
   );
 }
 
-export default App;
+export default Feed;

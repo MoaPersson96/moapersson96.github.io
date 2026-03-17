@@ -31,7 +31,7 @@ function App() {
         <main className="grow flex flex-col items-center justify-center text-center" role="main">
 
           {/* Black and white puff */}
-          <div className="w-full mb-10 px-4">
+          <div className="w-full mt-0 px-4">
             <WidePuffGrid
               items={[
                 {
@@ -54,14 +54,17 @@ function App() {
             />
           </div>
 
-          <CallToAction1
-            title="Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus."
-            buttonText="Läs mer"
-            buttonAction={handleCTAButtonClick}
-          />
+          <div className="mt-5 w-full max-w-[1920px] mx-auto px-4">
+            <CallToAction1
+              title="Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus."
+              buttonText="Läs mer"
+              buttonAction={handleCTAButtonClick}
+            />
+          </div>
+
 
           {/* Colored puffs */}
-          <div className="mt-8 w-full max-w-[1920px] mx-auto px-4">
+          <div className="mt-5 w-full max-w-[1920px] mx-auto px-4">
             <ColoredPuffGrid
               items={[
                 {
@@ -94,7 +97,7 @@ function App() {
 
           {/* Image Puff */}
 
-          <div className="w-full max-w-[1920px] mx-auto px-4 mt-16 mb-16">
+          <div className="w-full max-w-[1920px] mx-auto px-4 mt-5 mb-5">
             <ImagePuffGrid
               items={[
                 {

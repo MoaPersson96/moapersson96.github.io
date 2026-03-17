@@ -8,7 +8,7 @@ type CTAProps = {
 
 export function CallToAction1({ title, buttonText, buttonAction }: CTAProps) {
     return (
-        <section className="bg-black py-16 mb-10 w-full">
+        <section className="bg-black py-16 w-full">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-6 md:px-0">
                 <p className="text-gray-200 text-lg md:text-xl max-w-3xl leading-relaxed">
                     {title}

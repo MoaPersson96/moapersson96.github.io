@@ -9,7 +9,7 @@ type FeedPuffProps = {
 export function FeedPuff({ image, title, date, excerpt }: FeedPuffProps) {
 
     return (
-        <div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow duration-300">
+        <div className="bg-white overflow-hidden shadow hover:shadow-lg transition-shadow duration-300">
             <img
                 src={image}
                 alt={title}

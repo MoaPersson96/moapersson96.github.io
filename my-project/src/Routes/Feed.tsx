@@ -1,7 +1,7 @@
 import "../App.css";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Hero2 from "../components/Hero2";
+import HeroFeed from "../components/HeroFeed";
 import { FeedPuffGrid } from '../patterns/FeedPuffGrid';
 
 function Feed() {
@@ -10,21 +10,65 @@ function Feed() {
     <div className="min-h-screen flex flex-col">
       <div className="max-w-[1920px] max-auto w-full">
         <Header />
-        <Hero2
-          date="2020-12-22"
-          smallHeaderText="Case Stories"
-          headerText="Campus Skellefteå säkerställer framtidens kunskapsbehov"
-          text="Hella Skellefteå vibrerar. Nya Miljardetableringar med batteritillverkaren Northvolt i spetsen får positiva effekter för näringslivet och det arbetas intensivt för att lösa alltifrån bostadsbehov till rekryteringsfrågor. Mitt i allt detta finns Campus Skellefteå, som får en nyckelroll för att möjliggöra utvecklingen. - Den industri som växer fram här är inte bara ny i Sverige utan hela Europa, vilket självklart påverkar kraven på både forskning och kompetensomvandling, säger Ida Lindh, strategiskt ansvarig på Campus"
-          navButtonText="Till Case Stories"
+        <HeroFeed
+          smallHeaderText="Feed"
+          headerText="For all your listings needs"
+          text="If you want to list recent blogposts, company news or other events"
+          navButtonText="Till Feed"
           navDestination="widgets"
-          imgLink="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/230000/230134-Skelleftea.jpg"
-          // videoUrl="https://www.youtube.com/watch?v=F5gFwiFIViQ"
+          imgLink="./images/norrskenl.png"
         />
 
         <main className="grow flex flex-col items-center justify-center text-center" role="main">
 
           <div className="grow flex flex-col items-center" role="main">
-            <FeedPuffGrid />
+            <FeedPuffGrid
+              items={[
+                {
+                  image: "/images/Yellow.png",
+                  title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+                  date: "Mars 9, 2026",
+                  excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo."
+                },
+                {
+                  image: "/images/Deer.png",
+                  title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+                  date: "Januari 29, 2025",
+                  excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo."
+                },
+                {
+                  image: "/images/Redhouse.png",
+                  title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+                  date: "April 20, 2025",
+                  excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo."
+                },
+                {
+                  image: "/images/Stan.png",
+                  title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+                  date: "Augusti 10, 2025",
+                  excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo."
+                },
+                {
+                  image: "/images/BridgeNorthernlights.png",
+                  title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+                  date: "September 15, 2025",
+                  excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo."
+                },
+                {
+                  image: "/images/Lakewood.png",
+                  title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+                  date: "November 25, 2025",
+                  excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo."
+                },
+                {
+                  image: "/images/Snowcoveredtrees.png",
+                  title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+                  date: "December 1, 2025",
+                  excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo."
+                },
+              ]}
+            />
+
           </div>
 
           <Footer role="contentinfo" aria-label="Sidfot" />

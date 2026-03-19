@@ -13,10 +13,10 @@ export function FeedPuff({ image, title, date, excerpt }: FeedPuffProps) {
             <img
                 src={image}
                 alt={title}
-                className="w-full h-48 object-cover"
+                className="w-full h-64 object-cover"
             />
 
-            <div className="p-5 text-left">
+            <div className="p-6 text-left">
                 <h3 className="text-black font-semibold text-lg mb-2 cursor-pointer hover:underline">
                     {title}
                 </h3>

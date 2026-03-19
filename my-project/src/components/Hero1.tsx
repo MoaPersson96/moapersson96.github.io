@@ -3,6 +3,7 @@ import youtubeLogoWhite from "../assets/images/youtubeLogoWhite.png";
 import ReactPlayer from "react-player";
 import { useState } from "react";
 import whiteArrowDown from "../assets/images/whiteArrowDown.png";
+import VideoModule from "./VideoModule.tsx";
 
 
 type HeroProps = {
@@ -43,40 +44,37 @@ function Hero1({
           </>
         )}
 
-        {playVideo && (
-          <ReactPlayer
-            src={videoUrl}
-            playing
-            controls
-            width="100%"
-            height="100%"
-            className="absolute inset-0"
-          />
-        )}
       </div>
+      <div className="w-full h-full flex justify-center lg:absolute lg:inset-0 lg:items-center lg:justify-start">
+        <div className="relative bg-white h-80 top-90 w-[80vw] lg:top-0 lg:w-[36vw] lg:max-w-130">
+          <div className="text-black font-bold text-4xl p-12 h-80 -mb-8">
+            <h2 className="leading-snug line-clamp-4">
+              <h2>{text}</h2>
+            </h2>
+          </div>
 
-      {!playVideo && (
-        <div className="w-full h-full flex justify-center lg:absolute lg:inset-0 lg:items-center lg:justify-start">
-          <div className="relative bg-white h-80 top-90 w-[80vw] lg:top-0 lg:w-[36vw] lg:max-w-130">
-            <div className="text-black font-bold text-4xl p-12 h-80 -mb-8">
-              <h2 className="leading-snug line-clamp-4">
-                <h2>{text}</h2>
-              </h2>
-            </div>
-
-            <div className="flex">
-              <a
-                className="bg-black text-white w-full p-5 px-12 font-bold flex"
-                href={navDestination}
-              >
-                {navButtonText}
-                <img src={whiteArrowDown} className="h-6 ml-auto" />
-              </a>
-            </div>
+          <div className="flex">
+            <a
+              className="bg-black text-white w-full p-5 px-12 font-bold flex"
+              href={navDestination}
+            >
+              {navButtonText}
+              <img src={whiteArrowDown} className="h-6 ml-auto" />
+            </a>
           </div>
         </div>
-      )}
+      </div>
+
+      {playVideo && <>
+        <VideoModule videoUrl={videoUrl} />
+        <button 
+        type="button"
+        onClick={() => setPlayVideo(false)}
+        className="fixed z-50 text-black bg-white top-[17vh] right-[17vw] w-15 h-15 text-3xl rounded-full shadow-xs hover:bg-gray-100">X</button>
+      </>}
+
     </div>
+
   );
 }
 

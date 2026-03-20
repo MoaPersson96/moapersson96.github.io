@@ -3,18 +3,13 @@
 export function WidgetsDropdown() {
     return (
         <div className="
-            absolute
-            top-full
-            left-0
-            w-screen
             bg-black
             text-white
-            p-12
+            py-16
             shadow-2xl
-            z-40
             ">
             
-            <div className="max-w-7xl max-auto grid grid-cols-4 gap-16 px-10">
+            <div className="max-w-7xl mx-auto grid grid-cols-4 gap-16 px-10">
                 <div>
                     <h3 className="font-semibold mb-4">Widgets</h3>
                     <ul className="space-y-2 text-gray-300">

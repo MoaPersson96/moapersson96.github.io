@@ -1,15 +1,16 @@
 import "../App.css";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+// import Footer from "../components/Footer";
+// import Header from "../components/Header";
 import HeroFeed from "../components/HeroFeed";
 import { FeedPuffGrid } from '../patterns/FeedPuffGrid';
+import { posts } from "../data/posts";
 
 function Feed() {
 
   return (
     <div className="min-h-screen flex flex-col">
       <div className="max-w-[1920px] max-auto w-full">
-        <Header />
+        {/* <Header /> */}
         <HeroFeed
           smallHeaderText="Feed"
           headerText="For all your listings needs"
@@ -22,62 +23,18 @@ function Feed() {
         <main className="grow flex flex-col items-center justify-center text-center" role="main">
 
           <div className="grow flex flex-col items-center" role="main">
-            <FeedPuffGrid
-              items={[
-                {
-                  image: "/images/Yellow.png",
-                  title: "Lorem ipsum dolor sit amet",
-                  date: "Mars 9, 2026",
-                  excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo."
-                },
-                {
-                  image: "/images/Deer.png",
-                  title: "Lorem ipsum dolor sit amet",
-                  date: "Januari 29, 2025",
-                  excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo."
-                },
-                {
-                  image: "/images/Redhouse.png",
-                  title: "Lorem ipsum dolor sit amet",
-                  date: "April 20, 2025",
-                  excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo."
-                },
-                {
-                  image: "/images/Lake.png",
-                  title: "Lorem ipsum dolor sit amet",
-                  date: "Juni 13, 2025",
-                  excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo."
-                },
-                {
-                  image: "/images/Stan.png",
-                  title: "Lorem ipsum dolor sit amet",
-                  date: "Augusti 10, 2025",
-                  excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo."
-                },
-                {
-                  image: "/images/BridgeNorthernlights.png",
-                  title: "Lorem ipsum dolor sit amet",
-                  date: "September 15, 2025",
-                  excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo."
-                },
-                {
-                  image: "/images/Lakewood.png",
-                  title: "Lorem ipsum dolor sit amet",
-                  date: "November 25, 2025",
-                  excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo."
-                },
-                {
-                  image: "/images/Snowcoveredtrees.png",
-                  title: "Lorem ipsum dolor sit amet",
-                  date: "December 1, 2025",
-                  excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo."
-                },
-              ]}
-            />
+            <FeedPuffGrid 
+              items={posts.map(post => ({
+                  slug: post.slug,
+                  image: post.image,
+                  title: post.title,
+                  date: post.date,
+                  excerpt: post.excerpt,
+              }))} />
 
           </div>
 
-          <Footer role="contentinfo" aria-label="Sidfot" />
+          {/* <Footer role="contentinfo" aria-label="Sidfot" /> */}
         </main>
       </div>
     </div>

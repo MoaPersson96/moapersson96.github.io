@@ -24,7 +24,7 @@ function Hero1({
   const [playVideo, setPlayVideo] = useState(false);
 
   return (
-    <div className="relative w-full max-w-[1920px] mx-auto px-4 h-[720px] mb-5">
+    <div className="relative w-full h-100 lg:h-190 mb-110 lg:mb-0">
       <div className="absolute inset-0">
         {!playVideo && (
           <>

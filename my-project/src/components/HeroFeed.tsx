@@ -1,4 +1,4 @@
-import arrow from "../assets/images/blackArrowLeft.png";
+// Moa
 
 type HeroFeedProps = {
     smallHeaderText: string;
@@ -13,8 +13,6 @@ export default function HeroFeed({
     smallHeaderText,
     headerText,
     text,
-    navButtonText,
-    navDestination,
     imgLink,
 }: HeroFeedProps) {
     return (
@@ -24,24 +22,6 @@ export default function HeroFeed({
                 alt={headerText}
                 className="absolute inset-0 w-full h-full object-cover"
             />
-
-            <div className="absolute top-1/5 -translate-y-1/2 z-20 bg-white w-48">
-                <div className="text-right w-max">
-                    <a
-                        href={navDestination}
-                        className="inline-flex items-center gap-2 text-black p-5 font-bold justify-self-end"
-                    >
-                        <img
-                            src={arrow}
-                            className="h-4 w-4 justify-self-start"
-                            alt="Arrow"
-                        />
-                        <p className="justify-self-end pl-2">
-                            {navButtonText}
-                        </p>
-                    </a>
-                </div>
-            </div>
 
             {/* Text */}
             <div className="relative z-10 h-full flex items-center">

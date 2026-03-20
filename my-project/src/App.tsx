@@ -1,6 +1,6 @@
 import "./App.css";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+// import Footer from "./components/Footer";
+// import Header from "./components/Header";
 import Hero1 from "./components/Hero1";
 
 import { ColoredPuffGrid } from "./patterns/ColoredPuffGrid";
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col overflow-x-hidden">
-      <Header />
+      {/* <Header /> */}
       <div className="max-w-[1920px] mx-auto w-full">
 
         <div className="px-4">
@@ -122,7 +122,7 @@ function App() {
             />
           </div>
 
-          <Footer role="contentinfo" aria-label="Sidfot" />
+          {/* <Footer role="contentinfo" aria-label="Sidfot" /> */}
         </main>
       </div>
     </div>

@@ -1,6 +1,5 @@
 import "../App.css";
 import youtubeLogoWhite from "../assets/images/youtubeLogoWhite.png";
-import ReactPlayer from "react-player";
 import { useState } from "react";
 import whiteArrowDown from "../assets/images/whiteArrowDown.png";
 import VideoModule from "./VideoModule.tsx";

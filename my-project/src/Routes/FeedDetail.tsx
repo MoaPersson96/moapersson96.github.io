@@ -23,19 +23,19 @@ function FeedDetail() {
     {/* 📰 ARTIKEL */}
       <main className="max-w-[800px] mx-auto px-6 py-12">
 
-        <p className="uppercase text-black tracking-widest text-sm mb-4">
+        <p className="uppercase text-black tracking-widest text-center text-sm mb-4">
           NYHETER
         </p>
 
-        <h1 className="text-4xl text-black md:text-5xl font-bold mb-6">
+        <h1 className="text-3xl text-black md:text-4xl font-bold mb-6 text-center">
           {post.title}
         </h1>
 
-        <p className="text-sm text-gray-500 mb-8">
+        <p className="text-sm text-gray-800 font-semibold mb-8 text-center">
           {post.date}
         </p>
 
-        <p className="text-base text-gray-700 mb-10">
+        <p className="text-lg text-gray-700 mb-10 text-center">
           {post.excerpt}
         </p>
         
@@ -47,7 +47,7 @@ function FeedDetail() {
         </div>
 
 
-        <p className="text-lg text-black leading-relaxed mb-6">
+        <p className="text-xl text-black leading-relaxed mb-6 mt-15 text-center">
           {post.content}
         </p>
 

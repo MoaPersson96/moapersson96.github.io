@@ -48,7 +48,7 @@ function Hero1({
         <div className="relative bg-white h-80 top-90 w-[80vw] lg:top-0 lg:w-[36vw] lg:max-w-130">
           <div className="text-black font-bold text-4xl p-12 h-80 -mb-8">
             <h2 className="leading-snug line-clamp-4">
-              <h2>{text}</h2>
+              <p>{text}</p>
             </h2>
           </div>
 

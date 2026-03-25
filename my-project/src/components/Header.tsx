@@ -1,4 +1,5 @@
 import "../App.css";
+import { Link } from "react-router-dom";
 import NavButton from "./NavButton";
 import { useState } from "react";
 import WidgetsDropdown from "./navbar/WidgetsDropdown";
@@ -17,13 +18,13 @@ function Header() {
         >
           <div className="flex items-center justify-between h-30">
             {/* Logo */}
-            <a className="flex items-center px-3">
+            <Link to="/" className="flex items-center px-3">
               <img 
                 src="https://skelleftea.se/images/18.57e3b0a17a75fbf0652ca88/1630320903542/skell-eftea.png"
                 alt="Skelefteå logga"
                 className="h-16 w-auto"
               />
-            </a>
+            </Link>
 
             {/* Desktop navbar */}
             <div className="hidden md:flex gap-6 ml-auto mr-24">

@@ -1,5 +1,7 @@
 //Moa
 
+import { Link } from "react-router-dom";
+
 export function WidgetsDropdown() {
     return (
         <div className="
@@ -13,11 +15,31 @@ export function WidgetsDropdown() {
                 <div>
                     <h3 className="font-semibold mb-4">Widgets</h3>
                     <ul className="space-y-2 text-gray-300">
-                        <li>Hero</li>
-                        <li>Puffar</li>
-                        <li>Text</li>
-                        <li>Text och bild</li>
-                        <li>Call to action</li>
+                        <li>
+                            <Link to="/widgets/hero" className="hover:text-white">
+                                Hero
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/widgets/puffar" className="hover:text-white">
+                                Puffar
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/widgets/text" className="hover:text-white">
+                                Text
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/widgets/text-och-bild" className="hover:text-white">
+                                Text och bild
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/widgets/call-to-action" className="hover:text-white">
+                                Call to action
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -25,7 +25,7 @@ export default function HeroFeed({
 
             {/* Text */}
             <div className="relative z-10 h-full flex items-center">
-                <div className="ml-[5%] md:ml-[10%] lg:ml-[15%] pr-6 text-white max-w-2xl">
+                <div className="w-full max-w-[800px] mx-auto px-6 text-white">
 
                     {smallHeaderText && (
                         <p className="uppercase text-sm tracking-wider mb-3 opacity-80">

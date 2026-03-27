@@ -22,7 +22,6 @@ function Hero3({
           />
         </div>
       </div>
-      # rgba(0, 65, 101, 0.85)
       <div className="bg-blue-800/80 relative -top-120 w-[100%] md:w-[650px] mx-auto z-21 text-white p-12 px-0">
           <div className="flex flex-col m-2">
               <h2 className="text-xl md:text-5xl text-center md:line-clamp-4 font-bold mb-10">

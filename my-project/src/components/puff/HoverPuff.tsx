@@ -20,18 +20,14 @@ export default function HoverPuff({ title, excerpt, image }: CardProps) {
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition duration-300 z-10" />
 
+
             {/* Textbox */}
             <div className="
-                absolute left-0 bottom-2 md:bottom-4 w-full
-                bg-white
-                p-4
-                flex flex-col justify-end pb-4
-                h-24
-                z-20
-
-                group-hover:h-full
-
+                absolute left-0 w-full
+                bg-white p-4 z-20
                 transition-all duration-500 ease-in-out
+                top-3/4 -translate-y-1/2
+                group-hover:top-0 group-hover:h-full group-hover:translate-y-0
             ">
                 <h3 className="text-lg text-black font-semibold text-center">
                     {title}
@@ -39,8 +35,9 @@ export default function HoverPuff({ title, excerpt, image }: CardProps) {
 
                 <p className="
                     text-sm text-black mt-2
-                    opacity-0 translate-y-2
-                    group-hover:opacity-100 group-hover:translate-y-0
+                    opacity-100 md:opacity-0
+                    translate-y-0 md:translate-y-2
+                    md:group-hover:opacity-100 md:group-hover:translate-y-0
                     transition duration-300 delay-200
                 ">
                     {excerpt}

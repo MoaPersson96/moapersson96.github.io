@@ -3,14 +3,17 @@ import { Link } from "react-router-dom";
 type NavButtonProps = {
   buttonText: string;
   href: string;
+  onClick?: () => void;
+  className?: string;
 };
 
 
-function NavButton( {buttonText, href}: NavButtonProps) {
+function NavButton({ buttonText, href, onClick, className }: NavButtonProps) {
   return (
     <Link
       to={href}
-      className="text-black text-medium text-center px-4 font-semibold transition"
+      onClick={onClick}
+      className={`text-black text-medium font-semibold transition ${className ?? ""}`}
       >
         {buttonText}
       </Link>

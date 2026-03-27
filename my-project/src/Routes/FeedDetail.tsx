@@ -31,7 +31,7 @@ function FeedDetail() {
           {post.title}
         </h1>
 
-        <p className="text-sm text-gray-800 font-semibold mb-8 text-center">
+        <p className="text-sm text-gray-800 font-bold italic mb-8 text-center">
           {post.date}
         </p>
 
@@ -57,7 +57,7 @@ function FeedDetail() {
       {/* Divider */}
       <div className="w-full h-px bg-gray-200 my-16" />
 
-      {/* 🧱 PUFFAR (full bredd!) */}
+      {/* PUFFAR (full bredd!) */}
       <div className="w-full">
         <FeedPuffGrid 
           items={relatedPosts.map(post => ({

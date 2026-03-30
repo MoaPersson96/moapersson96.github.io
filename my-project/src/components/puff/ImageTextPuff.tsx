@@ -19,7 +19,7 @@ export default function ImageTextPuff({ label, title, description, image, href =
             <img
                 src={image}
                 alt={title}
-                className="w-full h-[500px] md:h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-[600px] md:h-[700px] object-cover transition-transform duration-700 group-hover:scale-105"
             />
 
             {/* Overlay */}

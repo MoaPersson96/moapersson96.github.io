@@ -13,7 +13,7 @@ type BlockListProps = {
 
 export default function TextBlocklist({ items }: BlockListProps) {
     return (
-        <div className="space-y-3">
+        <div className="space-y-6">
             {items.map((item, index) => (
                 <TextBlock key={index} {...item} />
             ))}

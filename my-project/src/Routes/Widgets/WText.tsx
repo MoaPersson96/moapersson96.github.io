@@ -4,24 +4,23 @@ import ImageTextPuff from "../../components/puff/ImageTextPuff";
 
 function WText() {
     return (
-        <main className="grow flex flex-col items-center justify-center text-center" role="main">
-            <TextBox
-                title="Möjligheterna på campus"
-                text="På Campus Skellefteå finns både Luleå tekniska universitet, Umeå universitet och ett nära samarbete med Mälardalens högskola och Folkuniversitetet. Dessutom kan du ta del av internationella universitets utbud via onlinekurser från några av världens bästa lärosäten.
+        <main className="grow flex flex-col items-center justify-center" role="main">
+            <div className="w-full max-w-3xl px-4 md:px-0 flex flex-col gap-3">
 
-Det är ingen slump att spelindustrin har vuxit sig stark i Skellefteå. På Campus Skellefteå hittar du ett flertal utbildningar inom området och ett kreativt kluster med mötesplatser för spelutvecklare – bland annat Game Jams, föreläsningar, pitchtävlingar, resor till spelmässor och den årliga konferensen Arctic Game Conference.
+                {/* Text Box */}
+                <div className="mt-10">
+                    <TextBox
+                        title="Lorem ipsum"
+                        text="Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
+                        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
+                        Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu.
+                        Ad litora torquent per conubia nostra inceptos himenaeos."
+                        background={false}
+                    />   
+                </div>
 
-YH-utbildningarna är kortare än universitetsutbildningarna och tas fram i nära samarbete med företag i branscher som söker kompetent arbetskraft. På Campus Skellefteå finns bland annat utbildningar inom spel, IT och kreativa näringar, industri och tillverkning samt vård och samhälle. Här fungerar Campus som en nod i Vigeo – en ny test- och demonstrationsmiljö för digitalisering och digital infrastruktur för livslångt lärande."
-                background={true}
-            />
-            <TextBox
-                title="Studera"
-                text="Vuxnas motiv att börja studera är olika. Du kanske vill utveckla din yrkeskompetens och framskrida i karriären. En del önskar slutföra studier som kommit av sig och andra studerar för nöjes skull eller för att man har ett bestämt mål. Om du valt att studera på annan ort men bor i Skellefteå så kan du ha rätt till ett antal fördelar som pendlingsbidrag, möjlighet att skriva tenta eller annan hjälp i dina studier via Studentcentrum på Campus Skellefteå."
-                background={false}
-            />
-            <div className="w-full max-w-3xl px-4 md:px-0 flex flex-col gap-10">
-
-                <div className="mt-15 mb-3">
+                {/* Link Block */}
+                <div className="mb-3">
                     <TextBlocklist
                         items={[
                             { title: "Lorem ipsum dolor sit amet", href: "#" },
@@ -30,11 +29,25 @@ YH-utbildningarna är kortare än universitetsutbildningarna och tas fram i när
                             { title: "Pellentesque sem placerat", href: "#" },
                         ]}
                     />
-
                 </div>
 
+                {/* Text Box with background */}
+                <div className="mb-3">
+                    <TextBox
+                        title="Text widget"
+                        text="
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id.
+                        Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus.
+                        Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora.
+                        Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus.
+                        Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.
+                        "
+                        background={true}
+                    />
+                </div>
+
+                {/* Image Text Puff */}
                 <div className="mb-15">
-                    {/* Image Text Puff */}
                     <ImageTextPuff
                         label="Lorem ipsum"
                         title="Lorem ipsum dolor sit amet"
@@ -43,7 +56,6 @@ YH-utbildningarna är kortare än universitetsutbildningarna och tas fram i när
                         href="#"
                     />
                 </div>
-
             </div>
         </main>
     );

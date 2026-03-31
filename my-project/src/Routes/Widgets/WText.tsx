@@ -1,4 +1,6 @@
 import TextBox from "../../components/TextBox";
+import TextBlocklist from "../../components/text/TextBlockLista";
+import ImageTextPuff from "../../components/puff/ImageTextPuff";
 
 function WText() {
     return (
@@ -17,6 +19,32 @@ YH-utbildningarna är kortare än universitetsutbildningarna och tas fram i när
                 text="Vuxnas motiv att börja studera är olika. Du kanske vill utveckla din yrkeskompetens och framskrida i karriären. En del önskar slutföra studier som kommit av sig och andra studerar för nöjes skull eller för att man har ett bestämt mål. Om du valt att studera på annan ort men bor i Skellefteå så kan du ha rätt till ett antal fördelar som pendlingsbidrag, möjlighet att skriva tenta eller annan hjälp i dina studier via Studentcentrum på Campus Skellefteå."
                 background={false}
             />
+            <div className="w-full max-w-3xl px-4 md:px-0 flex flex-col gap-10">
+
+                <div className="mt-15 mb-3">
+                    <TextBlocklist
+                        items={[
+                            { title: "Lorem ipsum dolor sit amet", href: "#" },
+                            { title: "Consectetur adipiscing elit", href: "#" },
+                            { title: "Quisque faucibus ex sapien", href: "#" },
+                            { title: "Pellentesque sem placerat", href: "#" },
+                        ]}
+                    />
+
+                </div>
+
+                <div className="mb-15">
+                    {/* Image Text Puff */}
+                    <ImageTextPuff
+                        label="Lorem ipsum"
+                        title="Lorem ipsum dolor sit amet"
+                        description="Consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus."
+                        image="/images/LuleåCity.png"
+                        href="#"
+                    />
+                </div>
+
+            </div>
         </main>
     );
 }

@@ -7,8 +7,8 @@ function WCTA() {
 
             <div className="px-4 mt-5">
                 <ImageCTA
-                    title="Köra bil i Sverige?"
-                    description="Tempus leo eu aenean sed diam urna tempor."
+                    title="Lorem ipsum dolor sit"
+                    description="Quisque faucibus ex sapien vitae pellentesque sem placerat."
                     buttonText="Läs mer!"
                     image="/images/LTUNatt.png"
                     href="#"

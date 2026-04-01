@@ -69,7 +69,7 @@ function Hero1({
         <button 
         type="button"
         onClick={() => setPlayVideo(false)}
-        className="fixed z-50 text-black bg-white top-[17vh] right-[17vw] w-15 h-15 text-3xl rounded-full shadow-xs hover:bg-gray-100">X</button>
+        className="fixed z-50 text-black bg-gray-400 top-[15vh] right-[2vw] w-15 h-15 text-3xl rounded-full shadow-xs hover:bg-gray-100">X</button>
       </>}
 
     </div>

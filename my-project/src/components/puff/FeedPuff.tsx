@@ -22,7 +22,7 @@ export function FeedPuff({ image, title, date, excerpt }: FeedPuffProps) {
                     {title}
                 </h3>
 
-                <p className="text-sm text-black mb-3">{date}</p>
+                <p className="text-sm font-bold italic text-black mb-3">{date}</p>
 
                 <p className="text-black text-sm leading-relaxed">
                     {excerpt}

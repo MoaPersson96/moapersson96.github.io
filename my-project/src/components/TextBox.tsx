@@ -9,13 +9,13 @@ type TextBoxProps = {
 function TextBox({ text, title, background }: TextBoxProps) {
   return (
     <div
-      className={`flex text-black text-left py-10 w-full ${
+      className={`flex items-start text-black text-left py-10 w-full px-6 ${
         background ? "bg-gray-100" : ""
       }`}
     >
       {background && (
         <img
-          className="w-11 h-11 mr-12"
+          className="w-11 h-11 mr-8 relative -top-5"
           src={infoImg}
           alt="info icon"
         />

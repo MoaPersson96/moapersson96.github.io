@@ -6,7 +6,7 @@ import Hero1 from "./components/Hero1";
 import { ColoredPuffGrid } from "./patterns/ColoredPuffGrid";
 import { ImagePuffGrid } from "./patterns/ImagePuffGrid";
 import { WidePuffGrid } from "./patterns/WidePuffGrid";
-import { CallToAction1 } from "./components/CallToAction1";
+import CallToAction1 from "./components/CallToAction1";
 
 function App() {
   const handleCTAButtonClick = () => {
@@ -59,6 +59,7 @@ function App() {
               title="Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus."
               buttonText="Läs mer"
               buttonAction={handleCTAButtonClick}
+              href={"#"}
             />
           </div>
 

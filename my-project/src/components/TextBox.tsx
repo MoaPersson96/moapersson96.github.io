@@ -8,7 +8,6 @@ type TextBoxProps = {
 
 function TextBox({ text, title, background }: TextBoxProps) {
   return (
-    <div>
       <div
         className={`flex text-black text-left p-5 m-2 max-w-200 ${
           background ? "bg-gray-50" : ""
@@ -31,14 +30,13 @@ function TextBox({ text, title, background }: TextBoxProps) {
             {title}
           </h3>
 
-          <p
-            className={`m-0 p-0 ${
-              background ? "text-base" : "text-xl"
-            }`}
-          >
-            {text}
-          </p>
-        </div>
+        <p
+          className={`m-0 p-0 ${
+            background ? "text-base" : "text-xl"
+          }`}
+        >
+          {text}
+        </p>
       </div>
     </div>
   );

@@ -59,6 +59,7 @@ function App() {
               title="Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus."
               buttonText="Läs mer"
               buttonAction={handleCTAButtonClick}
+              href={"#"}
             />
           </div>
 

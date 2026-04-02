@@ -7,7 +7,9 @@ type CTAProps = {
     buttonAction: () => void;
 }
 
-export default function CallToAction1({ title, buttonText, href, buttonAction }: CTAProps) {
+export default function CallToAction2({ title, buttonText, href, buttonAction }: CTAProps) {
+    const buttonClasses = 
+        "bg-[#8B341F] hover:bg-[#721904] transition px-8 py-4 rounded-lg font-semibold text-white whitespace-nowrap";
 
     const buttonContent = (
         <span className="inline-flex items-center gap-3">
@@ -16,13 +18,10 @@ export default function CallToAction1({ title, buttonText, href, buttonAction }:
         </span>
     );
 
-    const buttonClasses = "bg-[#8B341F] hover:bg-[#721904] transition px-8 py-4 rounded-lg font-semibold text-white whitespace-nowrap inline-block cursor-pointer"
-
-
     return (
         <section className="bg-black py-16 w-full">
-            <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-6 md:px-0">
-                <p className="text-gray-200 text-lg md:text-xl max-w-3xl leading-relaxed">
+            <div className="max-w-6xl mx-auto flex flex-col items-center text-center gap-8 px-6 md:px-0">
+                <p className="text-gray-200 text-lg md:text-xl max-w-3xl leading-relaxed mb-2">
                     {title}
                 </p>
 

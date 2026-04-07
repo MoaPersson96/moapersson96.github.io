@@ -11,8 +11,8 @@ type CTAProps = {
 
 export default function CTATextRight({ title, description, buttonText, onClick, href, className }: CTAProps) {
     const ButtonContent = () => (
-        <span className="inline-flex items-center gap-3">
-            <span className="text-3xl font-bold">←</span>
+        <span className="inline-flex items-center gap-4">
+            <span className="text-3xl font-bold leading-none relative -top-0.5">←</span>
             {buttonText}
         </span>
     );

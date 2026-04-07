@@ -12,9 +12,9 @@ export default function CallToAction2({ title, buttonText, href, buttonAction }:
         "bg-[#8B341F] hover:bg-[#721904] transition px-8 py-4 rounded-lg font-semibold text-white whitespace-nowrap";
 
     const buttonContent = (
-        <span className="inline-flex items-center gap-3">
+        <span className="inline-flex items-center gap-5">
             {buttonText}
-            <span className="text-2xl font-bold">→</span>
+            <span className="text-2xl font-bold leading-none relative -top-0.5">→</span>
         </span>
     );
 

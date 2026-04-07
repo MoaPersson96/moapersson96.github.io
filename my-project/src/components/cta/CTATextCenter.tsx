@@ -11,9 +11,9 @@ type CTAProps = {
 
 export default function CTATextCenter({ title, description, buttonText, onClick, href, className }: CTAProps) {
     const ButtonContent = () => (
-        <span className="inline-flex items-center gap-3">
+        <span className="inline-flex items-center gap-4">
             {buttonText}
-            <span className="text-3xl font-bold">→</span>
+            <span className="text-3xl font-bold leading-none relative -top-0.5">→</span>
         </span>
     );
 

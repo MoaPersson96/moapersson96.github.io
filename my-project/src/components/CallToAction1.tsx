@@ -10,9 +10,9 @@ type CTAProps = {
 export default function CallToAction1({ title, buttonText, href, buttonAction }: CTAProps) {
 
     const buttonContent = (
-        <span className="inline-flex items-center gap-3">
+        <span className="inline-flex items-center gap-5">
             {buttonText}
-            <span className="text-2xl font-bold">→</span>
+            <span className="text-2xl font-bold leading-none relative -top-0.5">→</span>
         </span>
     );
 

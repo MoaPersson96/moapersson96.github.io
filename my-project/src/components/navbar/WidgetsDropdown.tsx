@@ -22,27 +22,27 @@ export function WidgetsDropdown() {
                     <h3 className="font-semibold mb-4">Widgets</h3>
                     <ul className="space-y-2 text-gray-300">
                         <li>
-                            <Link to="/widgets/hero" className="hover:text-white block">
+                            <Link to="/widgets/hero" className="hover:text-white hover:underline block">
                                 Hero
                             </Link>
                         </li>
                         <li>
-                            <Link to="/widgets/puffar" className="hover:text-white block">
+                            <Link to="/widgets/puffar" className="hover:text-white hover:underline block">
                                 Puffar
                             </Link>
                         </li>
                         <li>
-                            <Link to="/widgets/text" className="hover:text-white block">
+                            <Link to="/widgets/text" className="hover:text-white hover:underline block">
                                 Text
                             </Link>
                         </li>
                         <li>
-                            <Link to="/widgets/text-och-bild" className="hover:text-white block">
+                            <Link to="/widgets/text-och-bild" className="hover:text-white hover:underline block">
                                 Text och bild
                             </Link>
                         </li>
                         <li>
-                            <Link to="/widgets/call-to-action" className="hover:text-white block">
+                            <Link to="/widgets/call-to-action" className="hover:text-white hover:underline block">
                                 Call to action
                             </Link>
                         </li>

@@ -41,7 +41,7 @@ function WText() {
             label="Lorem ipsum"
             title="Lorem ipsum dolor sit amet"
             description="Consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus."
-            image="/images/LuleåCity.png"
+            image="/images/LuleåCity.webp"
             href="#"
           />
         </div>

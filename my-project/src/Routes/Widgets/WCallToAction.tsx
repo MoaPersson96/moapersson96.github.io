@@ -15,7 +15,7 @@ function WCTA() {
                     title="Lorem ipsum dolor sit"
                     description="Quisque faucibus ex sapien vitae pellentesque sem placerat."
                     buttonText="Läs mer!"
-                    image="/images/LTUNatt.png"
+                    image="/images/LTUNatt.webp"
                     href="#"
                 />
             </div>

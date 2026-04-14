@@ -3,7 +3,7 @@
 export const posts = [
     {
                   slug: "yellow-post",
-                  image: "/images/Yellow.png",
+                  image: "/images/Yellow.webp",
                   title: "Lorem ipsum dolor",
                   date: "Mars 9, 2026",
                   excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo.",
@@ -11,7 +11,7 @@ export const posts = [
                 },
                 {
                   slug: "deer-post",
-                  image: "/images/Deer.png",
+                  image: "/images/Deer.webp",
                   title: "Lorem ipsum dolor",
                   date: "Januari 29, 2025",
                   excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo.",
@@ -19,7 +19,7 @@ export const posts = [
                 },
                 {
                   slug: "redhouse-post",
-                  image: "/images/Redhouse.png",
+                  image: "/images/Redhouse.webp",
                   title: "Lorem ipsum dolor",
                   date: "April 20, 2025",
                   excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo.",
@@ -27,7 +27,7 @@ export const posts = [
                 },
                 {
                   slug: "lake-post",
-                  image: "/images/Lake.png",
+                  image: "/images/Lake.webp",
                   title: "Lorem ipsum dolor",
                   date: "Juni 13, 2025",
                   excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo.",
@@ -35,7 +35,7 @@ export const posts = [
                 },
                 {
                   slug: "stan-post",
-                  image: "/images/Stan.png",
+                  image: "/images/Stan.webp",
                   title: "Lorem ipsum dolor",
                   date: "Augusti 10, 2025",
                   excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo.",
@@ -43,7 +43,7 @@ export const posts = [
                 },
                 {
                   slug: "bridge-post",
-                  image: "/images/BridgeNorthernlights.png",
+                  image: "/images/BridgeNorthernlights.webp",
                   title: "Lorem ipsum dolor",
                   date: "September 15, 2025",
                   excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo.",
@@ -51,7 +51,7 @@ export const posts = [
                 },
                 {
                   slug: "lakewood-post",
-                  image: "/images/Lakewood.png",
+                  image: "/images/Lakewood.webp",
                   title: "Lorem ipsum dolor",
                   date: "November 25, 2025",
                   excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo.",
@@ -59,7 +59,7 @@ export const posts = [
                 },
                 {
                   slug: "snowcoveredtrees-post",
-                  image: "/images/Snowcoveredtrees.png",
+                  image: "/images/Snowcoveredtrees.webp",
                   title: "Lorem ipsum dolor",
                   date: "December 1, 2025",
                   excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur bibendum. Sed at felis ac nisl efficitur commodo.",

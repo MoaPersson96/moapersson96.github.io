@@ -17,7 +17,7 @@ function Feed() {
           text="If you want to list recent blogposts, company news or other events"
           navButtonText="Till Feed"
           navDestination="widgets"
-          imgLink="./images/norrskenl.png"
+          imgLink="./images/norrskenl.webp"
         />
 
         <main className="grow flex flex-col items-center justify-center text-center" role="main">

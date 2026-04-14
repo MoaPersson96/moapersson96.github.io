@@ -9,7 +9,7 @@ type CTAProps = {
 
 export default function CallToAction2({ title, buttonText, href, buttonAction }: CTAProps) {
     const buttonClasses = 
-        "bg-[#8B341F] hover:bg-[#721904] transition px-8 py-4 rounded-lg font-semibold text-white whitespace-nowrap";
+        "bg-[#8B341F] hover:bg-[#721904] transition px-8 py-4 rounded-md font-semibold text-white whitespace-nowrap";
 
     const buttonContent = (
         <span className="inline-flex items-center gap-5">

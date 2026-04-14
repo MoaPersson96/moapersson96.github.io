@@ -37,14 +37,14 @@ export default function CTATextLeft({ title, description, buttonText, onClick, h
                     {href ? (
                         <a
                             href={href}
-                            className="inline-flex items-center justify-center bg-yellow-600 hover:bg-yellow-700 text-black font-medium px-8 py-4 transition-colors duration-200"
+                            className="inline-flex items-center justify-center rounded-md bg-yellow-600 hover:bg-yellow-700 text-black font-medium px-8 py-4 transition-colors duration-200"
                         >
                             <ButtonContent />
                         </a>
                     ) : (
                         <button
                             onClick={onClick}
-                            className="inline-flex items-center justify-center bg-yellow-600 hover:bg-yellow-700 text-black font-medium px-8 py-4 transition-colors duration-200"
+                            className="inline-flex items-center justify-center rounded-md bg-yellow-600 hover:bg-yellow-700 text-black font-medium px-8 py-4 transition-colors duration-200"
                         >
                             <ButtonContent />
                         </button>

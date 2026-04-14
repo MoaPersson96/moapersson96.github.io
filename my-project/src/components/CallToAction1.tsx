@@ -16,7 +16,7 @@ export default function CallToAction1({ title, buttonText, href, buttonAction }:
         </span>
     );
 
-    const buttonClasses = "bg-[#8B341F] hover:bg-[#721904] transition px-8 py-4 rounded-lg font-semibold text-white whitespace-nowrap inline-block cursor-pointer"
+    const buttonClasses = "bg-[#8B341F] hover:bg-[#721904] transition px-8 py-4 rounded-md font-semibold text-white whitespace-nowrap inline-block cursor-pointer"
 
 
     return (

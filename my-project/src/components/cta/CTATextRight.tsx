@@ -11,8 +11,8 @@ type CTAProps = {
 
 export default function CTATextRight({ title, description, buttonText, onClick, href, className }: CTAProps) {
     const ButtonContent = () => (
-        <span className="inline-flex items-center gap-3">
-            <span className="text-3xl font-bold">←</span>
+        <span className="inline-flex items-center gap-4">
+            <span className="text-3xl font-bold leading-none relative -top-0.5">←</span>
             {buttonText}
         </span>
     );
@@ -24,14 +24,14 @@ export default function CTATextRight({ title, description, buttonText, onClick, 
                     {href ? (
                         <a
                             href={href}
-                            className="inline-flex items-center gap-4 bg-yellow-600 hover:bg-yellow-700 text-black font-medium px-8 py-4 transition-colors duration-200"
+                            className="inline-flex items-center gap-4 rounded-md bg-yellow-600 hover:bg-yellow-700 text-black font-medium px-8 py-4 transition-colors duration-200"
                         >
                             <ButtonContent />
                         </a>
                     ) : (
                         <button
                             onClick={onClick}
-                            className="inline-flex items-center gap-4 bg-yellow-600 hover:bg-yellow-700 text-black font-medium px-8 py-4 transition-colors duration-200"
+                            className="inline-flex items-center gap-4 rounded-md bg-yellow-600 hover:bg-yellow-700 text-black font-medium px-8 py-4 transition-colors duration-200"
                         >
                             <ButtonContent />
                         </button>

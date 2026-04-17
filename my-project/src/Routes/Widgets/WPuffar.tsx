@@ -37,9 +37,9 @@ function WPuffar() {
       <div className="w-full max-w-[1920px] mx-auto px-4 mt-15">
         <ImagePuffGrid
           items={[
-            { label: "Lorem", title: "Lorem ipsum dolor sit amet", image: "/images/Bergnasbron.png", href: "#" },
-            { label: "Lorem", title: "Lorem ipsum dolor sit amet", image: "/images/Norrsken.png", href: "#" },
-            { label: "Lorem", title: "Lorem ipsum dolor sit amet", image: "/images/Kyrkbyn.png", href: "#" },
+            { label: "Lorem", title: "Lorem ipsum dolor sit amet", image: "/images/Bergnasbron.webp", href: "#" },
+            { label: "Lorem", title: "Lorem ipsum dolor sit amet", image: "/images/Norrsken.webp", href: "#" },
+            { label: "Lorem", title: "Lorem ipsum dolor sit amet", image: "/images/Kyrkbyn.webp", href: "#" },
           ]}
         />
       </div>
@@ -51,17 +51,17 @@ function WPuffar() {
             {
               title: "Lorem ipsum dolor sit amet.",
               excerpt: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-              image: "/images/LuleIsbana.png"
+              image: "/images/LuleIsbana.webp"
             },
             {
               title: "Lorem ipsum dolor sit amet.",
               excerpt: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-              image: "/images/LuleåKran.png"
+              image: "/images/LuleåKran.webp"
             },
             {
               title: "Lorem ipsum dolor sit amet.",
               excerpt: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-              image: "/images/LKyrkbyn.png"
+              image: "/images/LKyrkbyn.webp"
             }
           ]}
         />
@@ -74,17 +74,17 @@ function WPuffar() {
             {
               title: "Lorem ipsum dolor sit.",
               subtitle: "Lorem ipsum",
-              image: "/images/IsbanaL.png"
+              image: "/images/IsbanaL.webp"
             },
             {
               title: "Lorem ipsum dolor sit.",
               subtitle: "Lorem ipsum",
-              image: "/images/LuleåSommar.png"
+              image: "/images/LuleåSommar.webp"
             },
             {
               title: "Lorem ipsum dolor sit.",
               subtitle: "Lorem ipsum",
-              image: "/images/LuleåNorra.png"
+              image: "/images/LuleåNorra.webp"
             }
           ]}
         />

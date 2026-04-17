@@ -40,7 +40,8 @@ export default function HoverPuff({ title, excerpt, image }: CardProps) {
              flex flex-col items-center justify-start text-center p-6 pt-10
              opacity-0 
              group-hover:opacity-100
-             transition duration-300
+             transition duration-1000
+             ease-in-out
              ">
                 <h3 className="text-lg font-semibold text-black mb-2">
                     {title}

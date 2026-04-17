@@ -104,19 +104,19 @@ function App() {
                 {
                   label: "Lorem",
                   title: "Lorem ipsum dolor sit amet",
-                  image: "/images/Bergnasbron.png",
+                  image: "/images/Bergnasbron.webp",
                   href: "#",
                 },
                 {
                   label: "Lorem",
                   title: "Lorem ipsum dolor sit amet",
-                  image: "/images/Norrsken.png",
+                  image: "/images/Norrsken.webp",
                   href: "#",
                 },
                 {
                   label: "Lorem",
                   title: "Lorem ipsum dolor sit amet",
-                  image: "/images/Kyrkbyn.png",
+                  image: "/images/Kyrkbyn.webp",
                   href: "#",
                 },
               ]}

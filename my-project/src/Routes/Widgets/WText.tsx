@@ -1,10 +1,11 @@
 import TextBox from "../../components/TextBox";
 import TextBlocklist from "../../components/text/TextBlockLista";
 import ImageTextPuff from "../../components/puff/ImageTextPuff";
+import TextFlow from "../../components/text/Textflow";
 
 function WText() {
   return (
-    <main className="grow flex flex-col items-center justify-center text-center" role="main">
+    <main className="grow flex flex-col items-center text-center" role="main">
 
       <div className="mt-10">
         <TextBox
@@ -22,10 +23,14 @@ function WText() {
         />
       </div>
 
+      <div className="mt-5">
+        <TextFlow />
+      </div>
+
       {/* List + Puff section */}
       <div className="w-full max-w-3xl px-4 md:px-0 flex flex-col gap-10">
         
-        <div className="mt-15 mb-3">
+        <div className="mt-5 mb-3">
           <TextBlocklist
             items={[
               { title: "Lorem ipsum dolor sit amet", href: "#" },
